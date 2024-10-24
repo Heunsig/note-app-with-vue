@@ -20,6 +20,7 @@ function addNewNote() {
 <template>
   <div class="note-container">
     <h1 class="note-header">Note App (Vue)</h1>
+    <!-- Form 섹션 -->
     <section class="note-section">
       <form 
         class="note-form"
@@ -37,6 +38,9 @@ function addNewNote() {
         >Add</button>
       </form>
     </section>
+    <!-- /Form 섹션 -->
+
+    <!-- Note 리스트 섹션 -->
     <section>
       <div class="note-counter">
         <span data-note-count>{{ notes.length }}</span>개의 메모가 있습니다.
@@ -50,6 +54,7 @@ function addNewNote() {
         </li>
       </ul>
     </section>
+    <!-- /Note 리스트 섹션 -->
   </div>
 </template>
 
