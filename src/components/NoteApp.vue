@@ -11,6 +11,7 @@ function addNewNote() {
     return;
   }
 
+  // 신규 note value를 notes에 추가
   notes.value = [...notes.value, inputValue];
 
   inputEle.value = '';
