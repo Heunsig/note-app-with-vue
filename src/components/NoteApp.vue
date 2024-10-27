@@ -15,6 +15,7 @@ function addNewNote() {
   notes.value = [...notes.value, inputValue];
 
   inputEle.value = '';
+  inputEle.focus();
 }
 </script>
 
