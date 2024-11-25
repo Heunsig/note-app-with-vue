@@ -14,6 +14,7 @@ function addNewNote() {
   notes.value.push(inputValue);
 
   inputEle.value = '';
+  inputEle.focus();
 }
 </script>
 
@@ -43,9 +44,9 @@ function addNewNote() {
     <!-- Note 리스트 섹션 -->
     <section>
       <div class="note-counter">
-        <span data-note-count>{{ notes.length }}</span>개의 메모가 있습니다.
+        <span>{{ notes.length }}</span>개의 메모가 있습니다.
       </div>
-      <ul class="note-list" data-note-list>
+      <ul class="note-list">
         <li 
           class="note-item"
           v-for="note in notes"
