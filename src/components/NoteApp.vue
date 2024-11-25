@@ -11,7 +11,7 @@ function addNewNote() {
     return;
   }
 
-  notes.value = [...notes.value, inputValue];
+  notes.value.push(inputValue);
 
   inputEle.value = '';
 }
