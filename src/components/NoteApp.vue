@@ -25,7 +25,7 @@ function addNewNote() {
     <section class="note-section">
       <form 
         class="note-form"
-        @submit.prevent="addNewNote"
+        @submit.prevent="addNewNote()"
       >
         <input 
           class="form-control note-form__input" 
